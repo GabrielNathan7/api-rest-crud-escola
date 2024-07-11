@@ -1,0 +1,6 @@
+instala sequelize e maria db: npm i sequelize mariadb
+instala sequelize-cli nas devDependencies: npm i -D sequelize-cli
+
+Cria migration alunos: npx sequelize migration:create --name=alunos
+Migra dados da migration para o banco: npx sequelize db:migrate
+Desfaz uma migração que acabou de ser feita para o banco: npx sequelize db:migrate:undo

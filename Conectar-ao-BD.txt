@@ -1,0 +1,16 @@
+Connect to the mariaDB database
+To connect to the MariaDB database from your application, you can use the hostname db and the port 3306.
+
+For example, in a Node.js application, you can use the following code to connect to the database on your machine:
+
+const mysql = require('mysql2');
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  port: 3306,
+  user: 'user',
+  password: 'password',
+  database: 'mydatabase'
+});
+
+connection.connect();
